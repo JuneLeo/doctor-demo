@@ -20,6 +20,7 @@
     sudo systemctl restart docker
     ```
 * 常用命令
+
       ```
       # 查看images列表
       docker images
@@ -35,6 +36,7 @@
       sudo systemctl restart docker
       ```
 * 创建分组
+
         ```
         # 创建docker分组
         sudo groupadd docker
@@ -42,6 +44,7 @@
         sudo usermod -aG docker $USER
         ```
 * 容器操作
+
           ```
           # 拉取centos系统
           docker pull centos
@@ -63,6 +66,7 @@
           docker image prune
           ```
 * 容器获取
+
       ```
       # 拉取镜像
       sudo docker pull ubuntu
@@ -80,6 +84,7 @@
       sudo docker rmi ubuntu:latest redis:4.0
       ```
 * 运行、管理容器
+
         ```
         # 创建容器
         sudo docker create nginx:1.12
@@ -109,6 +114,7 @@
         sudo docker exec -it nginx bash
         ```
 * 容器互联
+
           ```
           # 两个容器互联
           sudo docker run -d --name mysql -e MYSQL_RANDOM_ROOT_PASSWORD=yes mysql
